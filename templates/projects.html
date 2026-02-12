@@ -10,6 +10,19 @@
     </div>
 </section>
 
+<section class="projects-video-section">
+    <div class="container">
+        <h2>Afrochine Project</h2>
+        <p class="projects-subtitle">See our fire safety installations in action</p>
+        <div class="video-container">
+            <video muted autoplay loop playsinline controls controlsList="nodownload nofullscreen noremoteplayback" disablePictureInPicture oncontextmenu="return false;">
+                <source src="{{ url_for('static', filename='projects/afrochine project .mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+
 <section class="projects-gallery-section">
     <div class="container">
         <h2>Project Gallery</h2>
@@ -29,6 +42,12 @@
             </div>
             <div class="gallery-item">
                 <img src="{{ url_for('static', filename='projects/IMG_20211111_165234~2.jpg') }}" alt="Fire Safety Installation">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='projects/IMG_20211112_063054~2.jpg') }}" alt="Fire Safety Installation">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='projects/IMG_20211112_083743.jpg') }}" alt="Fire Safety Installation">
             </div>
             <div class="gallery-item">
                 <img src="{{ url_for('static', filename='projects/IMG_20211112_083748.jpg') }}" alt="Fire Safety Installation">
