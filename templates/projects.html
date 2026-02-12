@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Our Projects - Bizzy Fire Protection Services{% endblock %}
+
+{% block content %}
+<section class="projects-hero">
+    <div class="projects-hero-content">
+        <h1>Our Projects</h1>
+        <p>Showcasing our fire safety installations and success stories</p>
+    </div>
+</section>
+
+<section class="projects-gallery-section">
+    <div class="container">
+        <h2>Project Gallery</h2>
+        <p class="projects-subtitle">Our fire safety installations across Zimbabwe</p>
+        <div class="projects-gallery">
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='projects/IMG_20211111_162415.jpg') }}" alt="Fire Safety Installation">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='projects/IMG_20211111_165224.jpg') }}" alt="Fire Safety Installation">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='projects/IMG_20211111_165227.jpg') }}" alt="Fire Safety Installation">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='projects/IMG_20211111_165232.jpg') }}" alt="Fire Safety Installation">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='projects/IMG_20211111_165234~2.jpg') }}" alt="Fire Safety Installation">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='projects/IMG_20211112_083748.jpg') }}" alt="Fire Safety Installation">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='projects/IMG_20211112_084057~2.jpg') }}" alt="Fire Safety Installation">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

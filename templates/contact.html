@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - Bizzy Fire Protection Services{% endblock %}
+
+{% block content %}
+<section class="contact-hero">
+    <div class="contact-hero-content">
+        <h1>Get In Touch</h1>
+        <p>We're here to help with all your fire safety needs</p>
+    </div>
+</section>
+
+<section class="contact-main">
+    <div class="container">
+        <div class="contact-wrapper">
+            <!-- Contact Information -->
+            <div class="contact-info-section">
+                <h2>Contact Information</h2>
+                <p class="contact-intro">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            <h3>Address</h3>
+                            <p>Opposite 7 Campbell Road<br>Braeside, Harare</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-text">
+                            <h3>Phone Numbers</h3>
+                            <p><a href="tel:+263717124414">+263 71 712 4414</a></p>
+                            <p><a href="tel:+263776245907">+263 77 624 5907</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:bizzyfireprotectionservice@gmail.com">bizzyfireprotectionservice@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-text">
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                            <p>Saturday: 8:00 AM - 1:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-section">
+                <h2>Send Us a Message</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name / Company Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Location Section -->
+<section class="location-section">
+    <div class="container">
+        <h2>Find Us</h2>
+        <p class="location-subtitle">Visit our office in Braeside, Harare</p>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3797.9226310671315!2d31.06652617517536!3d-17.842261483124577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDUwJzMyLjEiUyAzMcKwMDQnMDguOCJF!5e0!3m2!1sen!2szw!4v1770915985485!5m2!1sen!2szw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+    
+    // Create WhatsApp message
+    const whatsappMessage = `*New Contact Form Submission*%0A%0A*Name/Company:* ${name}%0A*Phone:* ${phone}%0A*Message:* ${message}`;
+    
+    // Open WhatsApp
+    window.open(`https://wa.me/263717124414?text=${whatsappMessage}`, '_blank');
+    
+    // Reset form
+    this.reset();
+    alert('Thank you! Your message will be sent via WhatsApp.');
+});
+</script>
+{% endblock %}

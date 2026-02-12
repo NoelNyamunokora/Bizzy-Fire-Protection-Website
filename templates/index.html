@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Professional Fire Protection Services</h1>
+        <p>“We believe in and promote quality delivery through protecting with vision, 
+            quality and pride"</p>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <div class="container">
+        <h2>Our Services</h2>
+        
+        <div class="services-intro" style="text-align: center;">
+            <p>We are a leading force in smart fire safety solutions, 
+                offering comprehensive protection through our specialized 
+                services. From advanced detection systems to automated 
+                suppression equipment, we provide complete fire safety 
+                coverage tailored to your needs. We supply and maintain all 
+                types of fire safety equipment with regular inspection services, 
+                and our safety audits ensure complete compliance with all fire
+                 safety regulations.<br/> <br/>Together, we protect what others
+                  can't with reliability, expertise, and total peace of mind.
+            </p>
+        </div>
+
+
+
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Fire Trainings & Drills</h3>
+                <p>Comprehensive fire safety training programs and emergency evacuation drills for your team</p>
+            </div>
+            <div class="service-card">
+                <h3>Fire Alarm and Sprinkler Systems</h3>
+                <p>Design and installation of automatic sprinkler systems</p>
+            </div>
+            <div class="service-card">
+                <h3>Fire Extinguishers</h3>
+                <p>Sales, installation, and regular inspection services</p>
+            </div>
+            <div class="service-card">
+                <h3>Safety Inspections</h3>
+                <p>Comprehensive fire safety audits and compliance checks</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+    <div class="container">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Excellent service! They installed our fire safety system quickly and professionally. Highly recommend Bizzy Fire Protection Services."</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Very knowledgeable team. They helped us choose the right fire extinguishers for our warehouse. Great prices too!"</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Prompt response and quality products. Our office is now fully compliant with fire safety regulations thanks to them."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Client Logos Section -->
+<section class="clients-section">
+    <div class="container">
+        <h2>Trusted By Leading Companies</h2>
+        <div class="clients-slider">
+            <div class="clients-track">
+                <div class="client-logo">
+                    <img src="{{ url_for('static', filename='images/gains cash and carry logo.png') }}" alt="Gains Cash and Carry">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ url_for('static', filename='images/intratrek zimbabwe logo.png') }}" alt="Intratrek Zimbabwe">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ url_for('static', filename='images/LLH Quarry.png') }}" alt="LLH Quarry">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ url_for('static', filename='images/silver blue logo.png') }}" alt="Silver Blue">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ url_for('static', filename='images/transmax logo.png') }}" alt="Transmax">
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="client-logo">
+                    <img src="{{ url_for('static', filename='images/gains cash and carry logo.png') }}" alt="Gains Cash and Carry">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ url_for('static', filename='images/intratrek zimbabwe logo.png') }}" alt="Intratrek Zimbabwe">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ url_for('static', filename='images/LLH Quarry.png') }}" alt="LLH Quarry">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ url_for('static', filename='images/silver blue logo.png') }}" alt="Silver Blue">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ url_for('static', filename='images/transmax logo.png') }}" alt="Transmax">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Contact & CTA Section -->
+<section class="cta-contact-section">
+    <div class="container">
+        <div class="cta-contact-wrapper">
+            <!-- Get a Quote CTA -->
+            <div class="cta-box">
+                <h2>Need Fire Safety Solutions?</h2>
+                <p>Get a free quote today and protect what matters most</p>
+                <a href="https://wa.me/263717124414?text=Hello%2C%20I%20would%20like%20to%20get%20a%20free%20quote%20for%20fire%20safety%20solutions" target="_blank" class="cta-btn">Get a Free Quote</a>
+            </div>
+
+            <!-- Quick Contact Form -->
+            <div class="quick-contact-form">
+                <h3>Quick Contact</h3>
+                <form id="quickContactForm">
+                    <input type="text" id="quickName" placeholder="Your Name *" required>
+                    <input type="tel" id="quickPhone" placeholder="Phone Number *" required>
+                    <textarea id="quickMessage" placeholder="Your Message *" rows="3" required></textarea>
+                    <button type="submit" class="quick-submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Location Section -->
+<section class="location-section">
+    <div class="container">
+        <h2>Find Us</h2>
+        <p class="location-subtitle">Visit our office in Braeside, Harare</p>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3797.9226310671315!2d31.06652617517536!3d-17.842261483124577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDUwJzMyLjEiUyAzMcKwMDQnMDguOCJF!5e0!3m2!1sen!2szw!4v1770915985485!5m2!1sen!2szw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
